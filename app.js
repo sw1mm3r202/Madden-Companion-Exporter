@@ -17,7 +17,7 @@ admin.initializeApp({
 
 // Setup
 // Change the default port here if you want for local dev.
-app.set('port', (process.env.PORT || 5000));
+app.set('port', (process.env.PORT || 3001));
 app.use(express.static(__dirname + '/dist'));
 app.use(bodyParser.json({limit: '50mb'}));
 app.use(bodyParser.urlencoded({limit: '50mb', extended: true}));
